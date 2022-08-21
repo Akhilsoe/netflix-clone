@@ -33,7 +33,7 @@ const Main = () => {
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div className="absolute top-[20%] p-4 md:p-8">
+        <div className="absolute top-[38%] p-4 md:p-8">
           <h4 className="font-bold text-4xl md:7xl">{movie?.title}</h4>
           <div className="my-4">
             <button className="border border-gray-300 bg-gray-300 py-2 px-5 text-black">
