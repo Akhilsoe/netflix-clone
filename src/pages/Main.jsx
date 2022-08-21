@@ -27,15 +27,22 @@ const Main = () => {
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div>
-          <div>
+        <div className="absolute top-[20%] p-4 md:p-8">
+          <h4 className="font-bold text-4xl md:7xl">{movie?.title}</h4>
+          <div className="my-4">
             <button className="border border-gray-300 bg-gray-300 py-2 px-5 text-black">
               Play
             </button>
-            <button className="border border-gray-300 ml-4 py-2 px-5 text-white">
+            <button className="border border-gray-300 ml-4 py-2 px-5 text-gray">
               Watch Later
             </button>
           </div>
+          <p className="my-3 text-gray-400 text-sm">
+            Released : {movie?.release_date}
+          </p>
+          <p className="w-full md:max-w-[50%] mb-3 text-gray-200">
+            {movie?.overview}
+          </p>
         </div>
       </div>
     </div>
