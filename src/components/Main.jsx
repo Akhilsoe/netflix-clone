@@ -36,10 +36,10 @@ const Main = () => {
         <div className="absolute top-[38%] p-4 md:p-8">
           <h4 className="font-bold text-4xl md:7xl">{movie?.title}</h4>
           <div className="my-4">
-            <button className="border border-gray-300 bg-gray-300 py-2 px-5 text-black">
+            <button className="border border-gray-300 bg-gray-300 py-2 px-5 text-black hover:-translate-y-[0.10rem] ease-out ">
               Play
             </button>
-            <button className="border border-gray-300 ml-4 py-2 px-5 text-gray">
+            <button className="border border-gray-300 ml-4 py-2 px-5 text-gray hover:-translate-y-[0.10rem] ease-out ">
               Watch Later
             </button>
           </div>
