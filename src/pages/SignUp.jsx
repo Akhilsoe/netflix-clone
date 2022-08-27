@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const SignUp = () => {
   return (
     <>
       <div className="w-full h-screen">
@@ -14,7 +14,7 @@ const Login = () => {
         <div className="fixed  px-4 py-24 w-full z-50">
           <div className="max-w-[440px] h-[550px] mx-auto bg-black/75 text-white">
             <div className="max-w-[320px] mx-auto py-14">
-              <h1 className="font-bold text-4xl">Sign In</h1>
+              <h1 className="font-bold text-4xl">Sign Up</h1>
               <form className="w-full flex flex-col py-4">
                 <input
                   className="p-3 bg-gray-800 my-2 rounded"
@@ -29,20 +29,20 @@ const Login = () => {
                   autoComplete="current-password"
                 />
                 <button className="bg-red-600 rounded py-3 my-6 font-bold">
-                  Sign In
+                  Sign Up
                 </button>
                 <div className="flex justify-between items-center text-sm text-gray-300">
                   <p>
-                    <input className="accent-white" type="checkbox" /> Remember
+                    <input className=" accent-white" type="checkbox" /> Remember
                     me
                   </p>
                   <p>Need help?</p>
                 </div>
                 <div className="py-6">
                   <p>
-                    <span className="text-gray-400">New to Netflix?</span>
+                    <span className="text-gray-400">Already on Netflix?</span>
 
-                    <Link to="/SignUp"> Sign Up.</Link>
+                    <Link to="/Login"> Sign In.</Link>
                   </p>
                 </div>
               </form>
@@ -54,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
