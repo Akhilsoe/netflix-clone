@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import ProtectedRoute from "./components/ProtectedRoute"
 import { AuthContextProvider } from "./context/AuthContext"
@@ -22,6 +23,7 @@ export default function App() {
          <Account />
           </ProtectedRoute>} /> 
      </Routes>
+     <Footer />
     </AuthContextProvider>
     </>
   )
